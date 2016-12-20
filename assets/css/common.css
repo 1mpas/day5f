@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Variables */
+/* Base settings */
+body {
+  min-width: 700px;
+  background: #fff;
+  color: #010101;
+  font-size: 14px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+a {
+  color: #399fff;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(3, 151, 255, 0.2);
+  transition: color 0.25s ease-out, border-color 0.25s ease-out;
+}
+a:visited,
+a:visited:hover {
+  color: #b13cd7;
+  text-decoration: none;
+  border-bottom-color: rgba(177, 60, 215, 0.2);
+}
+a:hover {
+  color: #399fff;
+  text-decoration: none;
+  border-bottom-color: transparent;
+}
+a:focus,
+a:active {
+  color: #399fff;
+  text-decoration: none;
+}
+/* Base layout */
+.pw {
+  padding: 0 20px;
+}
+.pw__i {
+  width: 660px;
+  margin: 0 auto;
+}
+.page {
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.page__i {
+  float: left;
+  width: 100%;
+}
+/* Blocks */
+.content {
+  overflow: hidden;
+}
+.content h1 {
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.content h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.content p {
+  line-height: 16px;
+  margin: 15px 0;
+}
+.content p:first-child {
+  margin-top: 0;
+}
+.content p:last-child {
+  margin-bottom: 0;
+}
+.content p li {
+  margin: 15px 0;
+}
+.header {
+  margin-bottom: 20px;
+}
+.header__bg {
+  padding: 15px 0;
+  background: #000;
+  color: #fff;
+}
+.logo__pic {
+  display: inline-block;
+  vertical-align: middle;
+}
+.logo__pic svg {
+  width: 70px;
+  fill: #fff;
+  margin-left: -8px;
+}
+.logo__text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: -8px;
+}
+.mainmenu {
+  background: #e9e4ee;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.mainmenu .mainmenu__i {
+  list-style: none;
+  padding: 16px 0;
+}
+.mainmenu-item {
+  display: inline-block;
+  margin: 0 5px;
+  font-weight: 15px;
+  font-weight: bold;
+}
+.mainmenu-item:first-child {
+  margin-left: 0;
+}
+.mainmenu-item:last-child {
+  margin-right: 0;
+}
+.sidebar {
+  width: 180px;
+  float: left;
+  margin-right: 20px;
+}
+.textblock {
+  background: #f7f7f7;
+  font-size: 11px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  line-height: 14px;
+}
+.textblock__i {
+  padding: 10px 13px;
+}
+.textblock__i p {
+  margin: 10px 0;
+}
+.textblock__i p:first-child {
+  margin-top: 0;
+}
+.textblock__i p:last-child {
+  margin-bottom: 0;
+}
+.somepic__pic {
+  margin-bottom: 4px;
+}
+.somepic__desc {
+  color: #66626a;
+  font-size: 11px;
+  text-align: right;
+}
+.footer {
+  clear: both;
+  margin-top: 10px;
+}
+.footer__i {
+  background: #343755;
+  color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+.footer__text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.news li {
+  margin: 20px 0;
+}
+.news h2 {
+  padding-top: 30px;
+}
+.news-item__title {
+  font-weight: bold;
+}
+.news-item__text {
+  margin-top: 5px;
+}
+.blog li {
+  margin: 20px 0;
+}
+.blog h2 {
+  padding-top: 20px;
+}
+.blog-item__title {
+  font-weight: bold;
+}
+.blog-item__text {
+  margin-top: 5px;
+}
